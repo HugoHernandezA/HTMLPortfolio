@@ -1,0 +1,46 @@
+h1 {
+  text-align: center;
+}
+
+.h2r {
+    text-align: right;
+}
+
+.h2l {
+    text-align: left;
+    background-color: antiquewhite;
+}
+
+.txt1 {
+    background-color: antiquewhite;
+}
+
+#hlinks {
+    text-align: center;
+}
+
+.butl {
+    text-align: right;
+}
+
+body:before, body:after {
+    content: "";
+    position: fixed;
+    background: #900;
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+
+body:before {
+    top: 0;
+}
+
+body:after {
+    bottom: 0;
+}
+
+body {
+    border-left: 100 px solid #900;
+    border-right: 100 px solid #900;
+}
