@@ -1,3 +1,40 @@
+/*---------------------NAVBAR---------------*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+float: left;
+border-right:1px solid #bbb;
+}
+
+li:last-child {
+border-right: none;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+
+.active {
+background-color: rgb(106, 165, 204);
+}
+
+/*---------------------TEXTS---------------*/
+
 h1 {
   text-align: center;
 }
@@ -7,12 +44,7 @@ h1 {
 }
 
 .h2l {
-    text-align: left;
-    background-color: antiquewhite;
-}
-
-.txt1 {
-    background-color: antiquewhite;
+    color: #DDDDDD;
 }
 
 #hlinks {
@@ -22,25 +54,114 @@ h1 {
 .butl {
     text-align: right;
 }
+/*---------------------ABOUT ME SECTION---------------*/
 
-body:before, body:after {
-    content: "";
-    position: fixed;
-    background: #900;
-    left: 0;
-    right: 0;
-    height: 10px;
+.section {
+    background-color: rgba(90, 207, 198, 0.5); 
+    display:flex;
+    background: url(../HTMLPortfolio/aboutme.jpg);
+    background-size:100% auto;
 }
 
-body:before {
-    top: 0;
+.prophoto{
+    width: 30%;
 }
 
-body:after {
-    bottom: 0;
+.txt1 {
+    background-color: "#D9EAF8";
+    margin: "50px";
+    border-radius: "15px"; 
+    padding: "30px";
+    color: #DDDDDD;
 }
 
-body {
-    border-left: 100 px solid #900;
-    border-right: 100 px solid #900;
+/*---------------------TITLE---------------*/
+#title {
+    display: flex;
+    flex-direction: column;
+    background: url(../HTMLPortfolio/titleScreen.jpg);
+    background-size:100% auto;
+    padding: 140px 160px;
 }
+
+.structure{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*---------------------BODY BORDER---------------*/
+body{
+    font-family:'Roboto',sans-serif;
+}
+
+
+/*---------------------BUTTON TEST---------------*/
+a.button2{
+    display: inline-block;
+    padding:0.5em 3em;
+    border:0.16em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
+}
+
+a.button2:hover{
+    color:#DDDDDD;
+    border-color:#DDDDDD;
+}
+
+a.button2:active{
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+}
+
+@media all and (max-width:30em){
+    a.button2{
+    display:block;
+    margin:0.4em auto;
+    }
+}
+/*---------------------SOCIAL MEDIA---------------*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .social {
+      display:flex;
+      justify-content: center;
+  }
