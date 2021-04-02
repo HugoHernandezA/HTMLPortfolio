@@ -6,6 +6,9 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
   
 li {
@@ -54,17 +57,59 @@ h1 {
 .butl {
     text-align: right;
 }
-/*---------------------ABOUT ME SECTION---------------*/
+/*---------------------SPLITTERS---------------*/
 
 .section {
     background-color: rgba(90, 207, 198, 0.5); 
     display:flex;
+    background: url(../HTMLPortfolio/gradient.png);
+    background-size:100% auto;
+    justify-content: center;
+}
+
+.sub-section {
+    padding: 10px;
+    font-size: 20px;
+}
+
+/*---------------------ABOUT ME SECTION---------------*/
+
+.prophoto{
+    width: 30%;
+    border-radius: 50%;
+    border: rgb(0, 0, 0) 5px solid;
+    align-self: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.aboutMe{
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
     background: url(../HTMLPortfolio/aboutme.jpg);
     background-size:100% auto;
 }
 
-.prophoto{
-    width: 30%;
+.aboutMe .aboutInfo {
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.descrInfoC {
+    background-color: #85b7ce;
+    padding: 15px 10px;
+    background-color: #eeefff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+
+#descrInfo {
+    text-align: center;
+    font: 20px bold;
+    opacity: 1;
 }
 
 .txt1 {
@@ -122,6 +167,11 @@ a.button2:active{
     border-color:#BBBBBB;
 }
 
+.share-button {
+    display: flex;
+    justify-content: center;
+}
+
 @media all and (max-width:30em){
     a.button2{
     display:block;
@@ -135,33 +185,67 @@ a.button2:active{
     width: 50px;
     text-align: center;
     text-decoration: none;
+}
+
+.socialmedia {
+    padding: 10px;
+}
+  
+/* Add a hover effect if you want */
+.fa:hover {
+opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.social {
+    display:flex;
+    justify-content: center;
+    background-color: #111;
+}
+
+  /*---------------------TITLE2---------------*/
+  div.background {
+    background: url(../HTMLPortfolio/titleScreen.jpg);
+    background-size: 100% auto;
+    border: 2px solid black;
+    padding: 150px 10px;
   }
   
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
+  div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
   }
   
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
+  div.transbox p {
+    margin: 5%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
   }
 
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-
-  .social {
-      display:flex;
-      justify-content: center;
+  @media (max-width: 800px) {
+    .aboutMe {
+      flex-direction: column;
+    }
   }
