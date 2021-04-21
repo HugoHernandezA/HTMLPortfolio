@@ -5,7 +5,10 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(77, 77, 77);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
   
 li {
@@ -39,6 +42,10 @@ h1 {
   text-align: center;
 }
 
+h3 {
+    text-align: center;
+}
+
 .h2r {
     text-align: right;
 }
@@ -54,17 +61,83 @@ h1 {
 .butl {
     text-align: right;
 }
-/*---------------------ABOUT ME SECTION---------------*/
+/*---------------------SPLITTERS---------------*/
 
 .section {
     background-color: rgba(90, 207, 198, 0.5); 
     display:flex;
-    background: url(../HTMLPortfolio/aboutme.jpg);
+    background: url(Image\ Resources/gradient.png);
     background-size:100% auto;
+    justify-content: center;
 }
+
+.sub-section {
+    padding: 10px;
+    font-size: 20px;
+}
+
+/*---------------------ABOUT ME SECTION---------------*/
 
 .prophoto{
     width: 30%;
+    border-radius: 50%;
+    border: rgb(0, 0, 0) 5px solid;
+    align-self: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.addenda{
+    width: 40%;
+    height: 40%;
+    border: rgb(0, 0, 0) 5px solid;
+    align-self: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.aboutMe{
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: url(Image\ Resources/aboutme2.jpg);
+    background-size:100% auto;
+}
+
+.aboutMe .aboutInfo {
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.projects{
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: url(Image\ Resources/xmlExample.png);
+    background-size:100%;
+}
+
+.projectsInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.descrInfoC {
+    padding: 15px 10px;
+    background-color: #eeefff;
+    border: 1px solid black;
+    opacity: 1;
+}
+
+.descrInfo {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 1;
 }
 
 .txt1 {
@@ -75,11 +148,29 @@ h1 {
     color: #DDDDDD;
 }
 
+/*---------------------TECHNOLOGIES---------------*/
+.Tech{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+}
+
+.techInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+}
+
+.iconText {
+    text-align: center;
+}
+
 /*---------------------TITLE---------------*/
 #title {
     display: flex;
     flex-direction: column;
-    background: url(../HTMLPortfolio/titleScreen.jpg);
+    background: url(Image\ Resources/titleScreen2.jpg);
     background-size:100% auto;
     padding: 140px 160px;
 }
@@ -92,7 +183,8 @@ h1 {
 
 /*---------------------BODY BORDER---------------*/
 body{
-    font-family:'Roboto',sans-serif;
+    /*font-family:'Roboto',sans-serif;*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -122,6 +214,11 @@ a.button2:active{
     border-color:#BBBBBB;
 }
 
+.share-button {
+    display: flex;
+    justify-content: center;
+}
+
 @media all and (max-width:30em){
     a.button2{
     display:block;
@@ -135,33 +232,89 @@ a.button2:active{
     width: 50px;
     text-align: center;
     text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
+}
 
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
+.socialmedia {
+    padding: 10px;
+    text-align: center;
+}
+  
+/* Add a hover effect if you want */
+.fa:hover {
+opacity: 0.4;
+}
 
-  .social {
-      display:flex;
-      justify-content: center;
-  }
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+background: rgb(37, 37, 37);
+color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+background: rgb(37, 37, 37);
+color: white;
+}
+
+.fa-linkedin {
+background: rgb(37, 37, 37);
+color: white;
+}
+
+
+
+/*---------------------CONTACT INFO---------------*/
+.social {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(77, 77, 77);
+}
+
+.contactInfo{
+    color: rgb(179, 179, 179);
+    font-size: 15px;
+    text-align: end;
+    padding: 5px 5px;
+}
+
+
+/*---------------------TITLE2---------------*/
+div.background {
+background: url(Image\ Resources/titleScreen2.jpg);
+background-size: 100% auto;
+border: 2px solid black;
+padding: 150px 10px;
+}
+
+div.transbox {
+margin: 30px;
+background-color: #ffffff;
+border: 1px solid black;
+opacity: 0.6;
+}
+
+div.transbox p {
+margin: 5%;
+font-size: 25px;
+font-weight: bold;
+color: #000000;
+text-align: center;
+}
+
+@media (max-width: 800px) {
+.aboutMe {
+    flex-direction: column;
+}
+.projects {
+    flex-direction: column;
+}
+}
+
+@media (max-width: 550px) {
+.Tech {
+    flex-direction: column;
+}
+}
