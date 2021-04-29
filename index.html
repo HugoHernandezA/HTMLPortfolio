@@ -10,53 +10,84 @@
 <body>
 
     <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">Projects</a></li>
-        <li><a href="#contact">Technologies</a></li>
-        <li><a href="#contact">Work in Progress</a></li>
-        <li style="float:right"><a href="#about">About Me</a></li>
+        <li><a class="active" href="#navHome">Home</a></li>
+        <li><a href="#navProjects">Projects</a></li>
+        <li><a href="#navTech">Technologies</a></li>
+        <li><a href="#navWip">Work in Progress</a></li>
+        <li style="float:right"><a href="#navMe">About Me</a></li>
     </ul>
 
+<!-- ABOUT ME AND PROFESSIONAL EXPERIENCE -->
     <div class="structure">
-        <div class="background">
+        <div id="navHome" class="background">
             <div class="transbox">
                 <p>HUGO HERNÁNDEZ<br>MY PROFESSIONAL PORTFOLIO</p>
             </div>
             <div class="share-button">
                 <a href="something" class="button2">INFO</a>
-                <a href="something" class="button2">CONTACT ME</a>
+                <a href="#navContact" class="button2">CONTACT ME</a>
             </div>
         </div>
 
-        <div class="aboutMe">
+        <div id="navMe" class="aboutMe">
             <img class="prophoto" src="../HTMLPortfolio/Image Resources/PHOTO HUGO.jpg" alt="Italian Trulli">
             <div class="aboutInfo">
-                <h1>ABOUT ME</h1>
+                <h1 style="color: aliceblue;">ABOUT ME</h1>
                 <div class="descrInfoC">
                     <p class="descrInfo">"My name is Hugo Abraham Hernandez Almaraz and I am a Computer Systems Engineer. I have worked as an IT consultant for several companies such as Lumik Design and Lord & Avni. This allowed me to gain a lot of experience in the IT department. Working and learning at Ksquare University allowed my professional skills to growth, making me the developer I am today."</p> 
                 </div>    
             </div> 
         </div>
 
-        <div class="section">
+        <div class="Jobs">
+                <h1>PROFESSIONAL EXPERIENCE ON</h1>
+                <div class="jobIcons">
+                    <div class="box" style="text-align: center;">
+                        <img class="jobLogo" src="../HTMLPortfolio/Image Resources/Lumik.png" alt="Italian Trulli">
+                        <h3>General Manager 2016-2019 </h3>
+                        <p style="text-align: center;">Production and Billing management in Irapuato, Guanajuato Facilities.</p> 
+                    </div>
+                    <div class="box" style="text-align: center;">
+                        <img class="jobLogo" src="../HTMLPortfolio/Image Resources/L&V.png" alt="Italian Trulli">
+                        <h3>IT Consultant 2019-2019 </h3>
+                        <p style="text-align: center;">Web page, social media, and e-platforms operator and developer.</p> 
+                    </div>
+                    <div class="box" style="text-align: center;">
+                        <img class="jobLogo" src="../HTMLPortfolio/Image Resources/LanguageLine.jpg" alt="Italian Trulli">
+                        <h3>Interpreter 2020-2020 </h3>
+                        <p style="text-align: center;">Interpretation and Translation services in costumer service departments.</p> 
+                    </div>
+                </div>
+            </div>
+
+<!-- PROJECTS -->
+
+        <div id="navProjects" class="section">
             <div class="sub-section">
-                <h1>PROJECTS</h1>
+                <h1>Projects</h1>
             </div>
         </div>
 
         <div class="projects">
             <img class="addenda" src="../HTMLPortfolio/Image Resources/addendacreator.jpg" alt="Italian Trulli">
             <div class="projectsInfo">
-                <h1>ADDENDA GENERATOR</h1>
+                <h1 style="color: aliceblue;">ADDENDA GENERATOR</h1>
                 <div class="descrInfoC">
                     <p id="descrInfo">The Addenda Generator is a custom small project for Lumik Design. It's purpose is to generate a xml complement requested by our provider, in order to get paid on time.</p> 
                 </div>    
             </div> 
         </div>
 
-        <div class="section">
+        <video style="margin-bottom: 1%;" width="auto" controls>
+            <source src="../HTMLPortfolio/Image Resources/addendaDemo.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+
+<!-- TECHNOLOGIES -->
+
+        <div id="navTech" class="section">
             <div class="sub-section">
-                <h1>TECHNOLOGIES</h1>
+                <h1>Technologies</h1>
             </div>
         </div>
 
@@ -94,29 +125,62 @@
                 <p id="iconText" style="text-align: center;">Proficiency on version control management.</p> 
             </div> 
         </div>
+
+<!-- WORK IN PROGRESS AND CURRENT COURSES -->
     
-        <div class="section">
+        <div id="navWip" class="section">
             <div class="sub-section">
-                <h1>WORK IN PROGRESS</h1>
+                <h1>W.I.P and current courses</h1>
             </div>
         </div>
 
-        <div class="aboutMe">
-            <img class="prophoto" src="../HTMLPortfolio/Image Resources/PHOTO HUGO.jpg" alt="Italian Trulli">
-            <div class="aboutInfo">
-                <h1>ABOUT ME</h1>
-                <div class="descrInfoC">
-                    <p id="descrInfo">"My name is Hugo Abraham Hernandez Almaraz and I am a Computer Systems Engineer. I have worked as an IT consultant for several companies such as Lumik Design and Lord & Avni. This allowed me to gain a lot of experience in the IT department. Working and learning at Ksquare University allowed my professional skills to growth, making me the developer I am today."</p> 
-                </div>    
-            </div> 
+        <div class="wip">
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_5terre.jpg">
+                    <img src="../HTMLPortfolio/Image Resources/wip-aws.jpg" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">Amazon Web Services - Learning on Cloud Computing</div>
+                </div>
+            </div>
+        
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_forest.jpg">
+                    <img src="../HTMLPortfolio/Image Resources/wip-node.jpg" alt="Forest" width="600" height="400">
+                    </a>
+                    <div class="desc">Node.js and Express.js Crash Courses</div>
+                </div>
+            </div>
         </div>
 
+        <div class="wip">
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_5terre.jpg">
+                    <img src="../HTMLPortfolio/Image Resources/wip-procreate.jpg" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">Procreate - Tool for designers and illustrators</div>
+                </div>
+            </div>
+        
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="img_forest.jpg">
+                    <img src="../HTMLPortfolio/Image Resources/wip-addenda.jpg" alt="Forest" width="600" height="400">
+                    </a>
+                    <div class="desc">Auto Addenda - XML automatic generator using Python</div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="social">
+<!-- SOCIAL MEDIA BUTTONS -->
+
+    <div id="navContact" class="social">
         <div class="socialmedia">
-            <a href="http://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
-            <a href="http://www.linkedin.com" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.facebook.com/hugoabraham.hernandezalmaraz.9" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/hugo-abraham-hern%C3%A1ndez-almaraz-a56051192/" target="_blank" class="fa fa-linkedin"></a>
             <a href="http://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
         </div>
         <div class="infoDiv">
@@ -128,8 +192,5 @@
 
     </div>
 
-    <script type="text/javascript">
-        console.log("Hello World!");
-    </script>
     <script type="text/javascript" src="manipulation.js"></script>
 </body>

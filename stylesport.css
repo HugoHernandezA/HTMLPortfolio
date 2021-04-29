@@ -33,8 +33,9 @@ background-color: #111;
 }
 
 .active {
-background-color: rgb(106, 165, 204);
+background-color: rgb(170, 47, 47);
 }
+
 
 /*---------------------TEXTS---------------*/
 
@@ -64,16 +65,18 @@ h3 {
 /*---------------------SPLITTERS---------------*/
 
 .section {
-    background-color: rgba(90, 207, 198, 0.5); 
+    background-color: rgb(170, 47, 47); 
     display:flex;
-    background: url(Image\ Resources/gradient.png);
-    background-size:100% auto;
+    /*background: url(Image\ Resources/gradient.png);
+    background-size:100% auto;*/
     justify-content: center;
+    margin-bottom: 1%;
 }
 
 .sub-section {
     padding: 10px;
     font-size: 20px;
+    color: #ffffff;
 }
 
 /*---------------------ABOUT ME SECTION---------------*/
@@ -115,7 +118,7 @@ h3 {
 
 .projects{
     display: flex;
-    margin-top: 1%;
+    /*margin-top: 1%;*/
     margin-bottom: 1%;
     background: url(Image\ Resources/xmlExample.png);
     background-size:100%;
@@ -148,6 +151,71 @@ h3 {
     color: #DDDDDD;
 }
 
+/*---------------------JOBS---------------*/
+.Jobs {
+    margin-bottom: 1%;
+}
+
+.jobIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.jobLogo {
+    width: 200px;
+    text-align: center;
+}
+
+.box {
+    padding: 2em;
+    display: block;
+    width: 50%;
+    height: 400px;
+    float: left;
+    margin: -1px 0 0 -1px;
+    color: black;
+    background: linear-gradient(
+       white, white 50%, #333 50%, #333
+    );
+    background-size: 100% 202%;
+    transition: all 0.2s ease;
+    animation: down-bump 0.4s ease;
+}
+
+.box p {
+    font-weight: 400;
+}
+
+.box:hover {
+    background-position: 100% 100%;
+    animation: up-bump 0.4s ease;
+}
+
+.box:hover p {
+    color: #ffffff;
+}
+
+.box:hover p span {
+    color: white;
+}
+
+.box:hover h3 {
+    color: #999;
+}
+  
+@keyframes up-bump {
+    0% { padding-top: 2em; }
+    50% { padding-top: 1.5em; }
+    100% { padding-top: 2em; }
+}
+@keyframes down-bump {
+    0% { padding-top: 2em; }
+    50% { padding-top: 2.5em; }
+    100% { padding-top: 2em; }
+}
+
+
 /*---------------------TECHNOLOGIES---------------*/
 .Tech{
     display: flex;
@@ -162,8 +230,40 @@ h3 {
     padding: 15px 10px;
 }
 
-.iconText {
-    text-align: center;
+
+.techInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    width: 50%;
+    height: 300px;
+    float: left;
+    margin: -1px 0 0 -1px;
+    color: black;
+    background: linear-gradient(
+       white, white 50%, #333 50%, #333
+    );
+    background-size: 100% 202%;
+    transition: all 0.2s ease;
+    animation: down-bump 0.4s ease;
+}
+
+  
+.techInfo:hover {
+    background-position: 100% 100%;
+    animation: up-bump 0.4s ease;
+}
+
+.techInfo:hover p {
+    color: #ffffff;
+}
+
+.techInfo:hover p span {
+    color: white;
+}
+
+.techInfo:hover h3 {
+    color: #999;
 }
 
 /*---------------------TITLE---------------*/
@@ -263,7 +363,34 @@ background: rgb(37, 37, 37);
 color: white;
 }
 
+/*---------------------WORK IN PROGRESS---------------*/
+.gallery {
+    border: 1px solid #ccc;
+  }
+  
+.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+  }
 
+* {
+    box-sizing: border-box;
+}
+  
+.wip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 /*---------------------CONTACT INFO---------------*/
 .social {
@@ -311,10 +438,19 @@ text-align: center;
 .projects {
     flex-direction: column;
 }
+.wip {
+    flex-direction: column;
+}
+.jobIcons {
+    flex-direction: column;
+}
 }
 
 @media (max-width: 550px) {
 .Tech {
+    flex-direction: column;
+}
+.jobIcons {
     flex-direction: column;
 }
 }
