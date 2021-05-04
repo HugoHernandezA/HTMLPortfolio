@@ -37,6 +37,93 @@ background-color: rgb(170, 47, 47);
 }
 
 
+/*---------------------ABOUT ME CARD---------------*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+
+/*---------------------POP MODAL---------------*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #ff8a8a;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #ff8a8a;
+    color: white;
+  }
+
 /*---------------------TEXTS---------------*/
 
 h1 {
@@ -77,6 +164,16 @@ h3 {
     padding: 10px;
     font-size: 20px;
     color: #ffffff;
+}
+
+hr.dashed {
+    border-top: 3px dashed #bbb;
+}
+
+.coolSplit {
+    direction: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 /*---------------------ABOUT ME SECTION---------------*/
@@ -154,6 +251,7 @@ h3 {
 /*---------------------JOBS---------------*/
 .Jobs {
     margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 .jobIcons {
@@ -171,7 +269,7 @@ h3 {
     padding: 2em;
     display: block;
     width: 50%;
-    height: 400px;
+    height: 450px;
     float: left;
     margin: -1px 0 0 -1px;
     color: black;
@@ -214,8 +312,56 @@ h3 {
     50% { padding-top: 2.5em; }
     100% { padding-top: 2em; }
 }
+/*---------------------PROJECTS---------------*/
 
+.proContainer {
+    position: relative;
+    text-shadow: #ffffff;
+    background-color: rgb(77, 77, 77);
+    margin-top: 3%;
+  }
+  
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
+  .collapsible {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .collapsible:hover {
+    background-color: rgb(170, 47, 47);
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .colContent {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
 /*---------------------TECHNOLOGIES---------------*/
 .Tech{
     display: flex;
